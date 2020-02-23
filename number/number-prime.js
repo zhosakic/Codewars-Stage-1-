@@ -30,17 +30,13 @@
 // Код для выдачи Codewars
 function isPrime(num) {
     if (num === 1 || num <= 0 ) {
-        console.log('is not prime');
+        return false;
         return;
     } else {
-        for (let i = 2; i < 10; i++) {
+        for (let i = 2; i < Math.sqrt(num) + 10 && num; i++) {
             if (num % i === 0 && num > i) {
-                console.log('is not prime');
-                return;
+                return false;
             }
         }
-    } console.log('prime');
+    } return true;
 }
-
-
-isPrime(762367321);
