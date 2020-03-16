@@ -16,5 +16,6 @@ reverseString('world');
 // Код для выдачи Codewars
 function solution(str) {
     return str.split('').reverse().join('');
+
 }
 
